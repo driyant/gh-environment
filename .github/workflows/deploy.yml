@@ -13,7 +13,7 @@ jobs:
   test:
     # environment: testing
     env:
-      MONGODB_CLUSTER_ADDRESS: cluster0.15pwqcc.mongodb.net
+      MONGODB_CLUSTER_ADDRESS: driyant.clustrer
       MONGODB_USERNAME: driyant 
       MONGODB_PASSWORD: driyant
       PORT: 8080
@@ -35,6 +35,7 @@ jobs:
       - name: Output information
         run: |
           echo "MONGODB_USERNAME: ${{ env.MONGODB_USERNAME }}"
+          echo "MONGODB_CLUSTER_ADDRESS: ${{ env.MONGODB_CLUSTER_ADDRESS }}"
   deploy:
     needs: test
     runs-on: ubuntu-latest
