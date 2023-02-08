@@ -5,7 +5,7 @@ on:
       - main
       - dev
 env:
-  MONGODB_DB_NAME: gh-environment
+  MONGODB_DB_NAME: mongodb_test
   # MONGODB_PASSWORD:
   # MONGODB_CLUSTER_ADDRESS:
   # MONGODB_PASSWORD:
@@ -13,9 +13,9 @@ jobs:
   test:
     # environment: testing
     env:
-      MONGODB_CLUSTER_ADDRESS: driyant.clustrer
-      MONGODB_USERNAME: driyant 
-      MONGODB_PASSWORD: driyant
+      MONGODB_CLUSTER_ADDRESS: cluster0.czedpxs.mongodb.net
+      MONGODB_USERNAME: aldi2424 
+      MONGODB_PASSWORD: g586vxCrLyLIyxfq
       PORT: 8080
     runs-on: ubuntu-latest
     steps:
