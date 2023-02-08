@@ -1,5 +1,5 @@
 // @ts-check
-import { test, expect } from '../playwright.config';
+import { test, expect } from 'playwright.config';
 
 test('event creation', async ({ request }) => {
   const testTitle = 'Test event';
